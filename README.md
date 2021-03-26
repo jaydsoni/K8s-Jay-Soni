@@ -3,7 +3,9 @@ Jay Soni
 Kubernetes
 Create a Kubernetes cluster using any method you'd like
 Create a new namespace called staging.
-Single Pod
+
+
+/n Single Pod
 Create a new pod called hello in this staging namespace, make sure it is in a healthy state. Use the hello image.
 Multi-node
 Assume you are operating a 3 node (node-1, node-2, and node-3) cluster, deploy a pod called p2 in every node of your cluster.
