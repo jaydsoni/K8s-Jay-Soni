@@ -30,4 +30,4 @@ stages:
     - task: lambda3docker@0
       inputs:
             command: 'push'
-            imagePush: '$(tag)'
+            imagePush: 'v1.0.0.0'
