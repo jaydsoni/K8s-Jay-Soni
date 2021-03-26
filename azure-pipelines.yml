@@ -23,6 +23,7 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'k8slearning'
+        repository: 'K8s'
         command: 'build'
         Dockerfile: '**/Dockerfile'
     - task: Docker@2
