@@ -12,10 +12,10 @@ variables:
   tag: '$(Build.BuildId)'
 
 stages:
-- stage: Build and Push
+- stage: Build
   displayName: Build and Push image
   jobs:
-  - job: Build and Push
+  - job: Build
     displayName: Build and Push
     pool:
       vmImage: ubuntu-latest
