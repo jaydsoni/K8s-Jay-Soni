@@ -2,17 +2,11 @@
 # Build and push image to Azure Container Registry; Deploy to Azure Kubernetes Service
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
-#trigger:
-#- main
+trigger:
+- main
 
 resources:
- pipelines:
-   - pipeline: K8s-Learning-jd-CI
-     source: K8s-Learning-jd-CI
-     trigger:
-      branches: 
-       - main
-#- repo: self
+- repo: self
 
 variables:
 
