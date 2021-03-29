@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: buildbuildid 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: buildbuildid
+  template:
+    metadata:
+      labels:
+        app: buildbuildid 
+    spec:
+      containers:
+        - name: buildbuildid 
+          image: k8slearning.azurecr.io/buildbuildid
+          ports:
+          - containerPort: 8080
