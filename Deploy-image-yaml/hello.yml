@@ -1,0 +1,12 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello
+  namespace: staging
+spec:
+    containers:
+    - name: hello
+      image: k8slearning.azurecr.io/k8s:8224
+      ports:
+      - containerPort: 8080
